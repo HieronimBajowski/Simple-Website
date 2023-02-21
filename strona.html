@@ -1,0 +1,98 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Zamów jedzenie online - Fastfood</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+		}
+		nav {
+			background-color: #666;
+			color: #fff;
+			overflow: hidden;
+		}
+		nav a {
+			float: left;
+			color: #fff;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+		nav a:hover {
+			background-color: #ddd;
+			color: #333;
+		}
+		.container {
+			margin: auto;
+			padding: 20px;
+			width: 80%;
+		}
+		form {
+			background-color: #fff;
+			border: 1px solid #ddd;
+			padding: 20px;
+			margin-top: 20px;
+		}
+		form label, form input, form select {
+			display: block;
+			margin-bottom: 10px;
+		}
+		form input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+		form input[type="submit"]:hover {
+			background-color: #666;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Zamów jedzenie online - Fastfood</h1>
+	</header>
+	<nav>
+		<a href="/">Strona główna</a>
+		<a href="file:///C:/Users/prohi/OneDrive/Pulpit/javascript/menu.html">Menu</a>
+		<a href="file:///C:/Users/prohi/OneDrive/Pulpit/javascript/kontakt.html">Kontakt</a>
+		<a href="file:///C:/Users/prohi/OneDrive/Pulpit/javascript/onas.html">O nas</a>
+	</nav>
+	<div class="container">
+		<h2>Zamów jedzenie online</h2>
+		<form>
+			<label for="name">Imię i nazwisko:</label>
+			<input type="text" id="name" name="name">
+			<label for="email">Adres e-mail:</label>
+			<input type="email" id="email" name="email">
+			<label for="phone">Numer telefonu:</label>
+			<input type="tel" id="phone" name="phone">
+			<label for="restaurant">Wybierz restaurację:</label>
+			<select id="restaurant" name="restaurant">
+				<option value="mcdonalds">McDonald's</option>
+				<option value="kfc">KFC</option>
+				<option value="burgerking">Burger King</option>
+			</select>
+			<label for="order">Wybierz zamówienie:</label>
+			<textarea id="order" name="order"></textarea>
+			<input type="submit" value="Zamów">
+		</form>
+	</div>
+	<script>
+		// Skrypt JavaScript
+	</script>
+</body>
+</html>
