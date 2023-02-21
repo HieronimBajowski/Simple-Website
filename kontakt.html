@@ -88,9 +88,27 @@
 			<label for="email">E-mail:</label>
 			<input type="text" id="email" name="email" required>
 			<label for="message">Wiadomość:</label>
-			<input type="text" id="message" name="message" rows="5" required>
+			<textarea id="message" name="message" rows="5" required></textarea>
 		<input type="submit" value="Wyślij">
 	</form>
 </div>
+	<script>
+		const form = document.querySelector('#contact-form');
+		form.addEventListener('submit', e => {
+			e.preventDefault();
+			const formData = new FormData(form);
+			const xhr = new XMLHttpRequest();
+			xhr.open('POST', 'sendmail.php');
+			xhr.onload = function() {
+				if (xhr.status === 200) {
+					alert('Dziękujemy za wysłanie wiadomości!');
+					form.reset();
+				} else {
+					alert('Wystąpił problem z wysłaniem wiadomości. Spróbuj ponownie później.');
+				}
+			};
+			xhr.send(formData);
+		});
+	</script>
 </body>
 </html>
